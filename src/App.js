@@ -1,11 +1,13 @@
 import './App.css'
 import React, { useState } from 'react'
-import Search from './components/Search'
 import Store from './components/Store'
 import Basket from './components/Basket'
-import CheckOut from './components/CheckOut'
+
 
 function App() {
+
+  /* here we're gonna get the store array of objects from a DB, according to initial test conditions,
+     but I'm using an short example for your convenience */
 
   const [store, setStore] = useState([
     {
@@ -16,15 +18,26 @@ function App() {
     {
       name: 'bread',
       price: 25.15,
-      amount: 45
+      amount: 40
     },
     {
       name: 'milk',
       price: 37.62,
-      amount: 12
+      amount: 3
     }
   ])
-  const [basket, setBasket] = useState([])
+  const [basket, setBasket] = useState([
+    {
+      name: 'sugar',
+      price: 50.00,
+      amount: 5
+    },
+    {
+      name: 'bread',
+      price: 25.15,
+      amount: 5
+    }
+  ])
   const [search, setSearch] = useState('')
 
 
@@ -33,12 +46,10 @@ function App() {
       <h1 style={{ 'textAlign': 'center' }} >Warehouse App</h1>
       <div style={{ 'display': 'flex', 'justifyContent': 'space-around', 'height': '60vh' }}>
         <div style={{ 'border': '1px solid white', 'display': 'flex', 'flexDirection': 'column' }}>
-          <Search search={search} setSearch={setSearch} />
-          <Store store={store} setCart={setBasket} />
+          <Store store={store} basket={basket} setStore={setStore} setBasket={setBasket} search={search} setSearch={setSearch} />
         </div>
         <div style={{ 'border': '1px solid yellow', 'display': 'flex', 'flexDirection': 'column'}}>
-          <Basket basket={basket} setStore={setStore} />
-          <CheckOut setBasket={setBasket} />
+          <Basket basket={basket} store={store} setStore={setStore} setBasket={setBasket} />
         </div>
       </div>
     </div>
