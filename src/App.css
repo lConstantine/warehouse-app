@@ -55,9 +55,9 @@ button {
   background-color: white;
   width: 100%;
   border-style: none;
-  border-bottom: 3px solid black;
-  height: 60px;
   outline: none;
+  border-bottom: 3px solid black !important;
+  height: 60px;
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
@@ -81,6 +81,7 @@ button {
   height: 60px;
   border-style: none;
   border-top: 3px solid black;
+  border-bottom: none !important;
   justify-content: center;
   align-items: center;
 }
