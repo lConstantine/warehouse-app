@@ -12,17 +12,17 @@ function App() {
     {
       name: "sugar",
       price: 50.0,
-      amount: 10,
+      amount: 55,
     },
     {
       name: "matches",
       price: 25.15,
-      amount: 10,
+      amount: 40,
     },
     {
       name: "bread",
       price: 25.15,
-      amount: 10,
+      amount: 67,
     },
     {
       name: "soap",
@@ -32,7 +32,7 @@ function App() {
     {
       name: "milk",
       price: 37.62,
-      amount: 10,
+      amount: 18,
     }
   ]);
   const [basket, setBasket] = useState([
