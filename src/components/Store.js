@@ -1,5 +1,6 @@
 import React from "react"
-import { BiPackage } from 'react-icons/bi';
+import { BiPackage } from 'react-icons/bi'
+import { FcSearch } from 'react-icons/fc'
 
 const Store = ({ store, basket, setStore, setBasket, search, setSearch }) => {
   const handlePassToBasket = (storeItem) => {
@@ -25,6 +26,7 @@ const Store = ({ store, basket, setStore, setBasket, search, setSearch }) => {
     <div className="store">
 
       <div className="inputWrapper">
+        <span className="glass"><FcSearch size="1.5em"/></span>
         <input className="input"
           value={search}
           onChange={(e) => setSearch(e.target.value)}

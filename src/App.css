@@ -95,6 +95,7 @@ button {
 }
 
 .inputWrapper {
+  display: flex;
   height: 60px;
   border-bottom: 3px solid black;
 }
@@ -108,4 +109,9 @@ button {
 
 .icon {
 display: flex;
+}
+
+.glass {
+  padding-top: 10px;
+  margin-right: 10px;
 }
