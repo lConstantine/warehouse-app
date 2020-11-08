@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/warehouse-app/static/css/main.a47d93c6.chunk.css",
+    "main.css": "/warehouse-app/static/css/main.a47d4e17.chunk.css",
     "main.js": "/warehouse-app/static/js/main.af2ea209.chunk.js",
     "main.js.map": "/warehouse-app/static/js/main.af2ea209.chunk.js.map",
     "runtime-main.js": "/warehouse-app/static/js/runtime-main.02bbadc1.js",
@@ -10,13 +10,13 @@
     "static/js/3.2fd5e815.chunk.js": "/warehouse-app/static/js/3.2fd5e815.chunk.js",
     "static/js/3.2fd5e815.chunk.js.map": "/warehouse-app/static/js/3.2fd5e815.chunk.js.map",
     "index.html": "/warehouse-app/index.html",
-    "static/css/main.a47d93c6.chunk.css.map": "/warehouse-app/static/css/main.a47d93c6.chunk.css.map",
+    "static/css/main.a47d4e17.chunk.css.map": "/warehouse-app/static/css/main.a47d4e17.chunk.css.map",
     "static/js/2.f54e653e.chunk.js.LICENSE.txt": "/warehouse-app/static/js/2.f54e653e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.02bbadc1.js",
     "static/js/2.f54e653e.chunk.js",
-    "static/css/main.a47d93c6.chunk.css",
+    "static/css/main.a47d4e17.chunk.css",
     "static/js/main.af2ea209.chunk.js"
   ]
 }
