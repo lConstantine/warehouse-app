@@ -1,4 +1,5 @@
 import React from "react"
+import { BiPackage } from 'react-icons/bi';
 
 const Store = ({ store, basket, setStore, setBasket, search, setSearch }) => {
   const handlePassToBasket = (storeItem) => {
@@ -19,14 +20,12 @@ const Store = ({ store, basket, setStore, setBasket, search, setSearch }) => {
     setStore(newStore)
   }
 
-  if (store.length < 1) {
-    return <h2>You drained it all...</h2>
-  }
 
   return (
-    <div>
-      <div>
-        <input
+    <div className="store">
+
+      <div className="inputWrapper">
+        <input className="input"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search goods"
@@ -38,13 +37,17 @@ const Store = ({ store, basket, setStore, setBasket, search, setSearch }) => {
           item.amount > 0 &&
           (search === "" || item.name.indexOf(search) !== -1) && (
             <button onClick={() => handlePassToBasket(item)} key={index + 1}>
-              {item.name}
-              <br />${item.price.toFixed(2)}
-              <br />
-              Q:{item.amount}
+              <div className="info">
+                <div>{item.name[0].toUpperCase() + item.name.slice(1)}</div>
+                <div className="icon">
+                  <BiPackage color="orange"/>
+                  {item.amount}
+                </div>
+              </div>
+              <div className="price">{item.price.toFixed(2)}</div>
             </button>
-          )
-      )}
+          ))
+      }
     </div>
   )
 }
