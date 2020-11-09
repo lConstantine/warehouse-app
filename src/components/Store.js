@@ -39,14 +39,14 @@ const Store = ({ store, basket, setStore, setBasket, search, setSearch }) => {
           item.amount > 0 &&
           (search === "" || item.name.indexOf(search) !== -1) && (
             <button onClick={() => handlePassToBasket(item)} key={index + 1}>
-              <div className="info">
-                <div>{item.name[0].toUpperCase() + item.name.slice(1)}</div>
-                <div className="icon">
+              <span className="info">
+                <span>{item.name[0].toUpperCase() + item.name.slice(1)}</span>
+                <span className="icon">
                   <BiPackage color="orange"/>
                   {item.amount}
-                </div>
-              </div>
-              <div className="price">{item.price.toFixed(2)}</div>
+                </span>
+              </span>
+              <span className="price">{item.price.toFixed(2)}</span>
             </button>
           ))
       }

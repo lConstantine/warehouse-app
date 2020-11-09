@@ -19,21 +19,21 @@ const Basket = ({ basket, store, setStore, setBasket }) => {
       <div className="receipt">Receipt</div>
 
       {basket.length < 1 ? (
-        <div className="empty">The basket is empty, you monster...</div>
+        <div className="empty">Printed Out!!!</div>
       ) : (
         basket.map(
           (item, index) =>
             item.amount > 0 && (
               <button onClick={() => handlePassToStore(item)} key={index + 1}>
-                <div className="info">
-                  <div>{item.name[0].toUpperCase() + item.name.slice(1)}</div>
-                  <div>
+                <span className="info">
+                  <span>{item.name[0].toUpperCase() + item.name.slice(1)}</span>
+                  <span>
                     {item.amount} x {item.price.toFixed(2)}
-                  </div>
-                </div>
-                <div className="price">
+                  </span>
+                </span>
+                <span className="price">
                   {(item.price * item.amount).toFixed(2)}
-                </div>
+                </span>
               </button>
             )
         )
