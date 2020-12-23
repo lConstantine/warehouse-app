@@ -4,7 +4,7 @@
 
 Created with **create-react app**, built with **webpack**
 
-Here's the task itself ![Task](https://github.com/lConstantine/test-react-table-app/tree/master/public/readmePic.jpg)
+Here's the task itself ![Task](https://github.com/lConstantine/warehouse-app/blob/master/public/readmePic.jpg)
 
 Sorry... I'm not gonna translate the description, but it's like a wharehouse management app
 where you choose the items and they g oto the basket. The app keeps track of the amount,
