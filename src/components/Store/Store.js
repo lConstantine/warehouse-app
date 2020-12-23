@@ -2,7 +2,7 @@ import React from "react"
 import { BiPackage } from 'react-icons/bi'
 import { FcSearch } from 'react-icons/fc'
 
-const Store = ({ store, basket, setStore, setBasket, search, setSearch }) => {
+export const Store = ({ store, basket, setStore, setBasket, search, setSearch }) => {
   const handlePassToBasket = (storeItem) => {
     const thisItem = basket.find(
       (basketItem) => basketItem.name === storeItem.name
@@ -53,5 +53,3 @@ const Store = ({ store, basket, setStore, setBasket, search, setSearch }) => {
     </div>
   )
 }
-
-export default Store

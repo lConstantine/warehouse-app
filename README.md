@@ -7,7 +7,7 @@ Created with **create-react app**, built with **webpack**
 Here's the task itself ![Task](https://github.com/lConstantine/warehouse-app/blob/master/public/readmePic.jpg)
 
 Sorry... I'm not gonna translate the description, but it's like a wharehouse management app
-where you choose the items and they g oto the basket. The app keeps track of the amount,
+where you search and choose the items to go to the basket. The app keeps track of the amount,
 total price and stuff, and then you can print out the receipt.
 
 Things used:

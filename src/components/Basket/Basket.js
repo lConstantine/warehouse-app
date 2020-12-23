@@ -1,7 +1,7 @@
 import React from "react";
 import { CgCreditCard } from "react-icons/cg";
 
-const Basket = ({ basket, store, setStore, setBasket }) => {
+export const Basket = ({ basket, store, setStore, setBasket }) => {
   const handlePassToStore = (basketItem) => {
     const newBasket = basket.map((obj) =>
       obj.name === basketItem.name ? { ...obj, amount: obj.amount - 1 } : obj
@@ -51,5 +51,3 @@ const Basket = ({ basket, store, setStore, setBasket }) => {
     </div>
   );
 };
-
-export default Basket;
