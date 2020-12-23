@@ -14,7 +14,7 @@ Things used:
 
 + React.js
 + react-icons
-+ ES6
++ ES6+
 
 You can play with the app here: https://lconstantine.github.io/warehouse-app/
 
